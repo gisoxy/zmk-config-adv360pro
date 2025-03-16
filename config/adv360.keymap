@@ -36,18 +36,18 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                 &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LA(LC(LG(LS(N1))))                                                 &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none                   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                      &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 4      &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 5      &kp H   &kp J           &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 3
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
@@ -55,14 +55,25 @@
             >;
         };
 
-        fn {
-            display-name = "Fn";
+        fn-l {
+            display-name = "Fn-left";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2              &kp F3          &kp F4          &kp F5          &kp F6           &tog 1                                                 &mo 4   &kp F7             &kp F8             &kp F9                 &kp F10              &kp F11               &kp F12
+&trans  &none               &none           &none           &none           &none            &none                                                  &none   &kp LA(LC(LG(Y)))  &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))      &kp LA(LC(LG(O)))    &kp LA(LC(LG(P)))     &kp LA(LC(LG(BSLH)))
+&trans  &kp LC(LS(LG(N4)))  &kp LC(LS(N4))  &kp LC(LS(N5))  &kp LC(LS(N3))  &kp PRINTSCREEN  &none              &trans  &trans      &trans  &trans  &none   &kp LA(LC(LG(H)))  &kp LA(LC(LG(J)))  &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))    &kp LA(LC(LG(SEMI)))  &kp LA(LC(LG(APOS)))
+&trans  &none               &none           &none           &none           &none                                       &trans      &trans                  &kp LA(LC(LG(N)))  &kp LA(LC(LG(M)))  &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(DOT)))  &kp LA(LC(LG(FSLH)))  &trans
+&trans  &trans              &trans          &trans          &trans                           &kp LS(LA(SPACE))  &trans  &trans      &trans  &trans  &trans                     &trans             &trans                 &trans               &trans                &trans
+            >;
+        };
+
+        fn-r {
+            display-name = "Fn-right";
+            bindings = <
+&kp F1  &kp F2             &kp F3             &kp F4             &kp F5             &kp F6             &tog 1                                      &mo 4   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))  &kp LA(LC(LG(G)))  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp LA(LC(LG(Z)))  &kp LA(LC(LG(X)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans             &trans             &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -77,24 +88,14 @@
             >;
         };
 
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
-        };
-
-        extra2 {
-            display-name = "Purple";
-            status = "reserved";
-        };
-
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
-        };
-
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
+        g_l {
+            bindings = <
+&kp ESC  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &none                                      &none  &none  &none  &none  &none  &none  &none
+&none    &none      &kp Q   &kp W   &kp E   &kp R   &none                                      &none  &none  &none  &none  &none  &none  &none
+&none    &none      &kp A   &kp S   &kp D   &kp F   &none      &none  &none      &none  &none  &to 0  &none  &none  &none  &none  &none  &none
+&none    &kp LSHFT  &kp Z   &kp X   &kp C   &kp V                     &none      &none                &none  &none  &none  &none  &none  &none
+&none    &kp LCTRL  &none   &none   &none           &kp SPACE  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
         };
     };
 };
