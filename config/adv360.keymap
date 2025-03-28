@@ -46,11 +46,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                  &mo 5               &kp N6  &kp N7          &kp N8        &kp N9    &kp N0    &kp MINUS
-&kp CLCK   &kp Q      &kp W       &kp E     &kp R      &kp T   &kp LA(LC(LG(N1)))                                                                      &kp LA(LC(LG(N3)))  &kp Y   &kp U           &kp I         &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A      &kp S       &kp D     &kp F      &kp G   &kp LA(LC(LG(N2)))  &kp LGUI            &kp ESCAPE        &kp HOME       &kp END        &kp LA(LC(LG(N4)))  &kp H   &kp J           &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X       &kp C     &kp V      &kp B                                           &kp LEFT_ALT      &kp PAGE_UP                                       &kp N   &kp M           &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp SPACE           &ht_layer 2 DELETE  &kp LCTRL         &kp PAGE_DOWN  &kp BACKSPACE  &kp ENTER                   &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 4
+&kp EQUAL  &kp N1          &kp N2     &kp N3     &kp N4      &kp N5  &tog 1                                                                                  &mo 5               &kp N6  &kp N7            &kp N8             &kp N9          &kp N0        &kp MINUS
+&kp CLCK   &kp Q           &kp W      &kp E      &kp R       &kp T   &kp LA(LC(LG(N1)))                                                                      &kp LA(LC(LG(N3)))  &kp Y   &kp U             &kp I              &kp O           &kp P         &kp BSLH
+&kp TAB    &kp A           &kp S      &kp D      &kp F       &kp G   &kp LA(LC(LG(N2)))  &kp LGUI            &kp ESCAPE        &kp HOME       &kp END        &kp LA(LC(LG(N4)))  &kp H   &kp J             &kp K              &kp L           &kp SEMI      &kp SQT
+&kp LSHFT  &kp Z           &kp X      &kp C      &kp V       &kp B                                           &kp LEFT_ALT      &kp PAGE_UP                                       &kp N   &kp M             &kp COMMA          &kp DOT         &kp FSLH      &kp RSHFT
+&mo 3      &kp LEFT_ARROW  &kp RIGHT  &kp GRAVE  &kp ESCAPE          &kp SPACE           &ht_layer 2 DELETE  &kp LCTRL         &kp PAGE_DOWN  &kp BACKSPACE  &kp ENTER                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOWN_ARROW  &kp UP_ARROW  &mo 4
             >;
         };
 
